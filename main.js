@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     var createCard = document.querySelector('.btn-students__create'); // Переменная для обработки кнопки
-    let div = document.createElement('div'); // Переменная для создания div
+    let column = document.getElementById('column') // Переменная для создания div
     
 
     function createStudentCard (){ // функция, которая создает массив
@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
         let h2 = document.createElement('h2');
         h2.textContent = 'Имя: ' + name;
-        div.append(h2);
+        column.append(h2);
         let span = document.createElement('span');
         span.textContent = "Возраст: " + age;
-        div.append(span);
+        column.append(span);
     }
    
     

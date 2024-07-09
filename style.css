@@ -79,3 +79,7 @@ body {
 .column {
   column-count: 4;
 }
+
+.noflex {
+  display: inline-block;
+}
